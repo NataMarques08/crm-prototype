@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    width: 40%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 5rem;
+}
+.login h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    margin-top: 2rem;
+}
