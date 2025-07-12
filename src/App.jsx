@@ -1,28 +1,24 @@
 import './App.css';
-import Login from './components/login/Login';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import Login from './pages/Login/Login';
+import Home from './pages/Home/Home';
+import ResetPwd from './pages/ResetPassword/ResetPwd';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 
 function App(){
 
-  const [text] = useTypewriter({
-    words:['Produtividade','Eficiência','Resultados','CRM Prototype'],
-    loop: true,
-    typeSpeed: 100,
-    deleteSpeed: 50,
-    delaySpeed: 1500,
-  });
 
   return (
-    <div className="App">
-        <h1>
-          <span>
-            {text}
-            <Cursor />
-          </span>
-        </h1>
-        <Login/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+
+          <Route path="/" element={<Login />} />     
+          <Route path="/home" element={<Home />} />
+          <Route path="/reset-password" element={<ResetPwd />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 export default App;
