@@ -1,10 +1,26 @@
 import './App.css';
-import desenho from './assets/desenho.png';
 import Login from './components/login/Login';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
+
 function App(){
+
+  const [text] = useTypewriter({
+    words:['Produtividade','Eficiência','Resultados','CRM Prototype'],
+    loop: true,
+    typeSpeed: 100,
+    deleteSpeed: 50,
+    delaySpeed: 1500,
+  });
+
   return (
     <div className="App">
-        <h1>CRM</h1>
+        <h1>
+          <span>
+            {text}
+            <Cursor />
+          </span>
+        </h1>
         <Login/>
     </div>
   );
