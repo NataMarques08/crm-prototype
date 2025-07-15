@@ -1,6 +1,27 @@
 import './Button.css';
 
-function Button({width,height,children, onClick, backgroundColor, color, fontSize, fontWeight}) {
+type ButtonProps = {
+    width?: string;
+    height?: string;
+    children: React.ReactNode;
+    onClick?: () => void;
+    backgroundColor?: string;
+    color?: string;
+    fontSize?: string;
+    fontWeight?: string;
+}
+
+
+function Button({
+                    width,
+                    height,
+                    children,
+                    onClick, 
+                    backgroundColor, 
+                    color, 
+                    fontSize, 
+                    fontWeight
+                }:ButtonProps) {
     return(
         <div className="button-component" style={{width: width, height: height}}>
                <button className="button"
