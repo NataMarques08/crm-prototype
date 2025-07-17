@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.searchbar-container{
+    width: 80%;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.searchbar-container input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #5a5a5a;
+    border-radius: 5px;
+}

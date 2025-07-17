@@ -15,7 +15,7 @@ function Login(){
 
 
     const [text] = useTypewriter({
-      words:['+Produtividade','+Eficiência','+Resultados','CRM Prototype'],
+      words:['+Produtividade','+Eficiência','+Resultados','PrototypeCRM'],
       loop: true,
       typeSpeed: 100,
       deleteSpeed: 50,
