@@ -1,10 +1,10 @@
 import './Login.css';
-import Input from '../../components/input_component/Input';
-import Button from '../../components/button_component/Button';
+import {Input} from '../../components/input_component/Input';
+import {Button} from '../../components/button_component/Button';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { useNavigate, Link } from 'react-router-dom';
  
-function Login(){
+export const Login = () =>{
 
     const navigate = useNavigate();
 

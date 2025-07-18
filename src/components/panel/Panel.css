@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.panel-container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: rgb(221, 218, 218);
+}

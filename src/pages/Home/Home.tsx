@@ -1,11 +1,12 @@
-import NavBar from "../../components/navbar_component/NavBar";
+import {NavBar} from "../../components/navbar_component/NavBar";
+import { Panel } from "../../components/panel/Panel";
 
-function Home(){
+export const Home = () =>{
     return (
-        <div>
+        <div className="home-container">
           <NavBar />
+          <Panel />
         </div>
     );
 }
 
-export default Home;

@@ -12,7 +12,7 @@ type ButtonProps = {
 }
 
 
-function Button({
+export const Button = ({
                     width,
                     height,
                     children,
@@ -21,7 +21,7 @@ function Button({
                     color, 
                     fontSize, 
                     fontWeight
-                }:ButtonProps) {
+                }:ButtonProps) => {
     return(
         <div className="button-component" style={{width: width, height: height}}>
                <button className="button"
@@ -39,4 +39,3 @@ function Button({
 
     );
 }
-export default Button;

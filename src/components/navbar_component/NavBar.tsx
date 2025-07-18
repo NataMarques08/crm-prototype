@@ -1,4 +1,4 @@
-import SearchBar from '../searchbar_component/SearchBar';
+import { SearchBar } from '../searchbar_component/SearchBar';
 import './NavBar.css';
 import { IoSettingsOutline } from "react-icons/io5";
 import React, {useState, useRef, useEffect} from 'react';
@@ -6,7 +6,7 @@ import React, {useState, useRef, useEffect} from 'react';
 
 
 
-const NavBar : React.FC = () =>{
+export const NavBar : React.FC = () =>{
     
     const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
@@ -34,18 +34,21 @@ const NavBar : React.FC = () =>{
                 </button>
                      {open && (
                         <div >
-                            <ul className="py-2">
+                            <ul className="settings-menu">
                                 <li >Perfil</li>
-                                <li>Tema</li>
+                                <li>Painel do Administrador</li>
+                                <li>Funil Vendedores</li>
                                 <li >Sair</li>
                             </ul>
                         </div>
       )}
             </div>
-           
-
-         
+                    
+            <h1>Prospecção</h1>  
+            <h1>{"Meu Funil"}</h1>  
+            <h1>Marketing</h1>  
+            <h1>Contatos</h1>  
+                    
         </div>
     );
 }
-export default NavBar;
