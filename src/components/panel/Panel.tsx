@@ -4,8 +4,9 @@ import './Panel.css'
 export const Panel = () =>{
     return (
         <div className="panel-container">
-            <h1>Panel</h1>
-            <Graphs/>
+            <h1>Painel</h1>
+            <Graphs />
+            <Graphs />
         </div>
     );
 }
